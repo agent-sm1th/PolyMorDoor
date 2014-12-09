@@ -1,0 +1,22 @@
+body {
+    background-color: #414042;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+
+.btn {
+	display:inline-block;
+	width: 250px;
+	padding:5px 10px;
+}

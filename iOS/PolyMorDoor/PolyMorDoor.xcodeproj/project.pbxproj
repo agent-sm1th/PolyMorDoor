@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33F7EC4F1A273CC1001BE145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7EC4E1A273CC1001BE145 /* AppDelegate.swift */; };
+		33F7EC511A273CC1001BE145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7EC501A273CC1001BE145 /* ViewController.swift */; };
+		33F7EC541A273CC1001BE145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F7EC521A273CC1001BE145 /* Main.storyboard */; };
+		33F7EC561A273CC1001BE145 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F7EC551A273CC1001BE145 /* Images.xcassets */; };
+		33F7EC591A273CC1001BE145 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F7EC571A273CC1001BE145 /* LaunchScreen.xib */; };
+		33F7EC651A273CC1001BE145 /* PolyMorDoorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7EC641A273CC1001BE145 /* PolyMorDoorTests.swift */; };
+		9200A49D1A28AFD60003C73C /* link.png in Resources */ = {isa = PBXBuildFile; fileRef = 9200A49C1A28AFD60003C73C /* link.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33F7EC5F1A273CC1001BE145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33F7EC411A273CC1001BE145 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F7EC481A273CC1001BE145;
+			remoteInfo = PolyMorDoor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33F7EC491A273CC1001BE145 /* PolyMorDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PolyMorDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F7EC4D1A273CC1001BE145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F7EC4E1A273CC1001BE145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33F7EC501A273CC1001BE145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33F7EC531A273CC1001BE145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33F7EC551A273CC1001BE145 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33F7EC581A273CC1001BE145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		33F7EC5E1A273CC1001BE145 /* PolyMorDoorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolyMorDoorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F7EC631A273CC1001BE145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F7EC641A273CC1001BE145 /* PolyMorDoorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolyMorDoorTests.swift; sourceTree = "<group>"; };
+		9200A49C1A28AFD60003C73C /* link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = link.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33F7EC461A273CC1001BE145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F7EC5B1A273CC1001BE145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F7EC401A273CC1001BE145 = {
+			isa = PBXGroup;
+			children = (
+				33F7EC4B1A273CC1001BE145 /* PolyMorDoor */,
+				33F7EC611A273CC1001BE145 /* PolyMorDoorTests */,
+				33F7EC4A1A273CC1001BE145 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33F7EC4A1A273CC1001BE145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33F7EC491A273CC1001BE145 /* PolyMorDoor.app */,
+				33F7EC5E1A273CC1001BE145 /* PolyMorDoorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33F7EC4B1A273CC1001BE145 /* PolyMorDoor */ = {
+			isa = PBXGroup;
+			children = (
+				9200A49C1A28AFD60003C73C /* link.png */,
+				33F7EC4E1A273CC1001BE145 /* AppDelegate.swift */,
+				33F7EC501A273CC1001BE145 /* ViewController.swift */,
+				33F7EC521A273CC1001BE145 /* Main.storyboard */,
+				33F7EC551A273CC1001BE145 /* Images.xcassets */,
+				33F7EC571A273CC1001BE145 /* LaunchScreen.xib */,
+				33F7EC4C1A273CC1001BE145 /* Supporting Files */,
+			);
+			path = PolyMorDoor;
+			sourceTree = "<group>";
+		};
+		33F7EC4C1A273CC1001BE145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33F7EC4D1A273CC1001BE145 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33F7EC611A273CC1001BE145 /* PolyMorDoorTests */ = {
+			isa = PBXGroup;
+			children = (
+				33F7EC641A273CC1001BE145 /* PolyMorDoorTests.swift */,
+				33F7EC621A273CC1001BE145 /* Supporting Files */,
+			);
+			path = PolyMorDoorTests;
+			sourceTree = "<group>";
+		};
+		33F7EC621A273CC1001BE145 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33F7EC631A273CC1001BE145 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33F7EC481A273CC1001BE145 /* PolyMorDoor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F7EC681A273CC1001BE145 /* Build configuration list for PBXNativeTarget "PolyMorDoor" */;
+			buildPhases = (
+				33F7EC451A273CC1001BE145 /* Sources */,
+				33F7EC461A273CC1001BE145 /* Frameworks */,
+				33F7EC471A273CC1001BE145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PolyMorDoor;
+			productName = PolyMorDoor;
+			productReference = 33F7EC491A273CC1001BE145 /* PolyMorDoor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33F7EC5D1A273CC1001BE145 /* PolyMorDoorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F7EC6B1A273CC1001BE145 /* Build configuration list for PBXNativeTarget "PolyMorDoorTests" */;
+			buildPhases = (
+				33F7EC5A1A273CC1001BE145 /* Sources */,
+				33F7EC5B1A273CC1001BE145 /* Frameworks */,
+				33F7EC5C1A273CC1001BE145 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F7EC601A273CC1001BE145 /* PBXTargetDependency */,
+			);
+			name = PolyMorDoorTests;
+			productName = PolyMorDoorTests;
+			productReference = 33F7EC5E1A273CC1001BE145 /* PolyMorDoorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33F7EC411A273CC1001BE145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Polymorph;
+				TargetAttributes = {
+					33F7EC481A273CC1001BE145 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6J425XV84B;
+					};
+					33F7EC5D1A273CC1001BE145 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 33F7EC481A273CC1001BE145;
+					};
+				};
+			};
+			buildConfigurationList = 33F7EC441A273CC1001BE145 /* Build configuration list for PBXProject "PolyMorDoor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33F7EC401A273CC1001BE145;
+			productRefGroup = 33F7EC4A1A273CC1001BE145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33F7EC481A273CC1001BE145 /* PolyMorDoor */,
+				33F7EC5D1A273CC1001BE145 /* PolyMorDoorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33F7EC471A273CC1001BE145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F7EC541A273CC1001BE145 /* Main.storyboard in Resources */,
+				9200A49D1A28AFD60003C73C /* link.png in Resources */,
+				33F7EC591A273CC1001BE145 /* LaunchScreen.xib in Resources */,
+				33F7EC561A273CC1001BE145 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F7EC5C1A273CC1001BE145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33F7EC451A273CC1001BE145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F7EC511A273CC1001BE145 /* ViewController.swift in Sources */,
+				33F7EC4F1A273CC1001BE145 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F7EC5A1A273CC1001BE145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F7EC651A273CC1001BE145 /* PolyMorDoorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33F7EC601A273CC1001BE145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33F7EC481A273CC1001BE145 /* PolyMorDoor */;
+			targetProxy = 33F7EC5F1A273CC1001BE145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33F7EC521A273CC1001BE145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F7EC531A273CC1001BE145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33F7EC571A273CC1001BE145 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F7EC581A273CC1001BE145 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33F7EC661A273CC1001BE145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33F7EC671A273CC1001BE145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33F7EC691A273CC1001BE145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PolyMorDoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		33F7EC6A1A273CC1001BE145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PolyMorDoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		33F7EC6C1A273CC1001BE145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PolyMorDoorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolyMorDoor.app/PolyMorDoor";
+			};
+			name = Debug;
+		};
+		33F7EC6D1A273CC1001BE145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PolyMorDoorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PolyMorDoor.app/PolyMorDoor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F7EC441A273CC1001BE145 /* Build configuration list for PBXProject "PolyMorDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F7EC661A273CC1001BE145 /* Debug */,
+				33F7EC671A273CC1001BE145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F7EC681A273CC1001BE145 /* Build configuration list for PBXNativeTarget "PolyMorDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F7EC691A273CC1001BE145 /* Debug */,
+				33F7EC6A1A273CC1001BE145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F7EC6B1A273CC1001BE145 /* Build configuration list for PBXNativeTarget "PolyMorDoorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F7EC6C1A273CC1001BE145 /* Debug */,
+				33F7EC6D1A273CC1001BE145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33F7EC411A273CC1001BE145 /* Project object */;
+}

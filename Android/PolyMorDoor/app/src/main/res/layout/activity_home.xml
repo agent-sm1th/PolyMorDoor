@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/app_background"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@drawable/polymorph_final"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:id="@+id/button_top_door"
+        style="@style/ButtonDoor"
+        android:onClick="onClickTopDoor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        />
+    <Button
+        android:id="@+id/button_bottom_door"
+        style="@style/ButtonDoor"
+        android:onClick="onClickBottomDoor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_refresh"
+            style="@style/View"
+            android:text="REFRESH"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="onClickRefresh"/>
+
+        <TextView
+            android:id="@+id/text_view_temp"
+            style="@style/View"
+            android:gravity="center"
+            android:text="0 °C"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/text_view_top_door_state"
+            style="@style/View"
+            android:gravity="center"
+            android:text="CLOSED"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>

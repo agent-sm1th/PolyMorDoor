@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">@color/grey</color>
+
+    <color name="black">#000000</color>
+    <color name="grey">#222229</color>
+    <color name="grey_light">#AAAAAA</color>
+    <color name="red">#FF0000</color>
+    <color name="red_light">#FF8282</color>
+    <color name="transparent">#00000000</color>
+</resources>

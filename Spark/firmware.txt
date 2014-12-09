@@ -1,0 +1,254 @@
+// -----------------------------------
+// Controlling LEDs over the Internet
+// -----------------------------------
+
+// name the pins
+int pin1 = D0;
+int pin2 = D1;
+int flag = 0;
+int door_v;
+int delay_t = 10000;
+
+
+
+//
+double temperature = 0.0;
+//
+
+int switch_door(int door, int state);
+int door(String command);
+
+void tempSensor ();
+void stateSensor ();
+
+//top door state
+int topdoorstate = 0;
+
+// This routine runs only once upon reset
+void setup()
+{
+    // Serial.begin(9600);
+    //Register our Spark function here
+    Spark.function("topdoor", topdoor);
+    Spark.function("door", door);
+    Spark.variable("topdoorstate", &topdoorstate, INT);
+
+    // Configure the pins to be outputs
+    pinMode(pin1, OUTPUT);
+    pinMode(pin2, OUTPUT);
+
+    // Initialize both the LEDs to be OFF
+    digitalWrite(pin1, LOW);
+    digitalWrite(pin2, LOW);
+    
+    //
+    Spark.variable("temperature", &temperature, DOUBLE);
+    pinMode(A0, INPUT);
+    pinMode(D5, INPUT);
+    //
+}
+
+
+// This routine loops forever
+void loop()
+{
+    tempSensor ();
+    stateSensor ();
+    if (flag){
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        delay(1000);
+        stateSensor();
+        
+
+        switch_door(door_v, LOW);
+        flag = 0;
+    }
+
+}
+
+
+//This function 
+int door(String command)
+{   
+    Serial.println(command);
+
+    int pinNumber = 0;
+    int pin;
+    
+    // int door;
+    
+
+    char * params = new char[command.length() + 1];
+
+    strcpy(params, command.c_str());
+    char * parapin = strtok(params, ",");
+    char * param1 = strtok(NULL, ",");
+    char * param2 = strtok(NULL, ",");
+    
+    if (parapin != NULL)
+    {
+        pin = atoi(parapin);
+        if (pin != 3025){
+            //checkout
+            return 2;
+        }
+    }
+    else
+    {
+        return 2;
+    }
+    
+    
+    if(param1 != NULL)
+    {
+        door_v = atoi(param1);
+        int success = switch_door(door_v, HIGH);
+        if (success){
+            return 1;
+       } 
+    
+    }
+    else
+    {
+        return 1;
+    }
+    
+    if(param2 != NULL)
+    {
+        delay_t = atoi(param2)*1000;
+    }
+    
+    // delay(delay_t);
+    // switch_door(door, LOW);
+    flag = 1;
+    
+    
+    
+    
+    return 0;
+    
+    
+}
+
+int switch_door (int door, int state){
+    if (door == 1){
+        digitalWrite(pin1, state);
+    } 
+    else if (door == 2){
+    	digitalWrite(pin2, state);
+    }
+    else
+    {
+        return 1;
+    }
+    return 0;
+    
+    
+}
+
+int topdoor(String command)
+{   
+    Serial.println(command);
+
+    int pinNumber = 0;
+
+    // char * param1 = strtok(commands, ",");
+    // char * param2 = strtok(NULL, ",");	
+    char * params = new char[command.length() + 1];
+
+    strcpy(params, command.c_str());
+    char * param1 = strtok(params, ",");
+    char * param2 = strtok(NULL, ",");
+    
+    if(param1 != NULL)
+    {
+    	if (!(strcmp(param1, "open"))){
+            digitalWrite(pin1, HIGH);
+            return 3;
+    	} else if (!(strcmp(param1, "close"))){
+    		digitalWrite(pin2, LOW);
+    		return 4;
+    	}
+    }
+    if(param2 != NULL)
+    {
+    	if (!(strcmp(param2, "open"))){
+            digitalWrite(pin1, HIGH);
+            return 5;
+    	} else if (!(strcmp(param1, "close"))){
+    		digitalWrite(pin2, LOW);
+    		return 6;
+    	}
+    	return 2;
+    }
+    
+    // DELAY
+    // if (param2 != null) {
+    	
+    // }
+
+    return 99;
+}
+
+
+void tempSensor ()
+{
+    int reading = 0;
+    double voltage = 0.0;
+    
+    // Keep reading the sensor value so when we make an API
+    // call to read its value, we have the latest one
+    reading = analogRead(A0);
+    
+    // The returned value from the Core is going to be in the range from 0 to 4095
+    // Calculate the voltage from the sensor reading
+    voltage = (reading * 3.3) / 4095;
+    
+    // Calculate the temperature and update our static variable
+    temperature = (voltage - 0.5) * 100;
+}
+
+void stateSensor ()
+{
+    // Keep reading the sensor value so when we make an API
+    // call to read its value, we have the latest one
+    topdoorstate = digitalRead(D5);
+}
+
+// void buzzer()
+
+/*
+int bottomdoor(String command)
+{
+   int state = 0;
+   //find out the pin number and convert the ascii to integer
+   int pinNumber = (command.charAt(1) - '0') - 1;
+   //Sanity check to see if the pin numbers are within limits
+   if (pinNumber < 0 || pinNumber > 1) return -1;
+
+   // find out the state of the led
+   if(command.substring(3,7) == "HIGH") state = 1;
+   else if(command.substring(3,6) == "LOW") state = 0;
+   else return -1;
+
+   // write to the appropriate pin
+   digitalWrite(pinNumber, state);
+   return 1;
+}*/

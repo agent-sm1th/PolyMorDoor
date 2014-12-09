@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/index.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/theme.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!--div which shows up as shadow overlay-->
+        <div id="shadow_overlay" class="black_overlay"><img id="loader_bar" src="img/ajax-loader-bar.gif" alt="" /></div>
+
+        <!--div which will have it's content swapped out for UI rendering purposes-->
+        <div id="ui_area">
+        </div>
+
+        <script id="office-template" type="text/x-handlebars-template">
+            <div class="container theme-showcase" role="main">
+
+                <div align="center">
+
+                    <img src="img/polymorph_final.png" align="center">
+
+                    <br/>
+                    <br/>
+                    <button id="doorMountDoomOpenButton" type="button" class="btn btn-lg btn-danger doorMountDoomOpenButton">Open Mount Doom</button>
+                    <br/>
+                    <br/>
+                    <button id="doorMorDorOpenButton" type="button" class="btn btn-lg btn-danger doorMorDorOpenButton">Open MorDor</button>
+                    <br/>
+                    <br/>
+                    <button type="button" class="btn btn-lg btn-danger tempMountDoomButton">Get Temperature</button>
+                    <br/>
+                    <br/>
+                    <button type="button" class="btn btn-lg btn-danger doorMountDoomStateButton">Get Door State</button>
+
+                </div>
+            </div>
+        </script>
+
+        <script id="open-polymorph-door-template" type="text/x-handlebars-template">
+            <div><h2>MountDoom</h2></div>
+            <div>
+                <input type="button" id="door0OpenButton" class="door0OpenButton" value="Open" style="display: inline;" />
+                <input type="button" id="door0CloseButton" class="door0CloseButton" value="Close" style="display: none;" />
+            </div>
+            <div>
+                <a class="navigation" href="#bottom">MorDor >></a>
+            </div>
+        </script>
+
+        <script id="open-bottom-door-template" type="text/x-handlebars-template">
+            <div><h2>MorDor</h2></div>
+            <div>
+                <input type="button" id="door1OpenButton" class="door1OpenButton" value="Open" style="display: inline;" />
+                <input type="button" id="door1CloseButton" class="door1CloseButton" value="Close" style="display: none;" />
+            </div>
+            <div>
+                <a class="navigation" href="#polymorph"><< MountDoom</a>
+            </div>
+        </script>
+
+        <script src="lib/jquery-1.11.1.js"></script>
+        <script src="lib/handlebars.js"></script>
+        <script src="lib/iscroll.js"></script>
+        <script src="lib/bootstrap.js"></script>
+
+
+        <script src="js/OfficeViewController.js"></script>
+        <script src="js/PolymorphDoorViewController.js"></script>
+        <script src="js/BottomDoorViewController.js"></script>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
